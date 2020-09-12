@@ -28,7 +28,7 @@
 
           <div class="site-nav">
             <ul>
-              <li>
+              <li class="link-s">
                 <a href="" class="current-link" style="text-decoration: none"
                   >Студия</a
                 >
@@ -89,7 +89,7 @@
         для вашего бизнеса
       </h1>
       <div class="button-wrap">
-        <a href="" class="button-primary">Заказать услугу</a>
+        <button class="button-primary" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -162,13 +162,24 @@
           <div class="images">
             <ul>
               <li>
-                <img src="./Images/typing.jpg" alt="typing" />
+                <div class="img-overlay">
+                  <img src="./Images/typing.jpg" alt="typing" />
+                  <p class="overlay-text">Десктопные приложения</p>
+                </div>
               </li>
+
               <li>
-                <img src="./Images/telephone.jpg" alt="telephone" />
+                <div class="img-overlay">
+                  <img src="./Images/telephone.jpg" alt="telephone" />
+                  <p class="overlay-text">Мобильные приложения</p>
+                </div>
               </li>
+
               <li>
-                <img src="./Images/hexagone.jpg" alt="hexagone" />
+                <div class="img-overlay">
+                  <img src="./Images/hexagone.jpg" alt="hexagone" />
+                  <p class="overlay-text">Дизайнерские решения</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -525,5 +536,13 @@
         </div>
       </footer>
     </div>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close></button>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
