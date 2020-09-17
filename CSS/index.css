@@ -6,6 +6,7 @@
   --accent-color: #18a0fb;
   --secondary-accent-color: #2196f3;
   --secondary-background-color: #f5f4fa;
+  --time: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -200,7 +201,7 @@ nav {
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
   text-decoration: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--time);
 }
 
 button,
@@ -221,7 +222,7 @@ select {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1000ms var(--time);
 }
 
 .backdrop.is-hidden {
